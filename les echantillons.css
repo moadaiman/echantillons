@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 100%; /* Garde l'image à 100% de la largeur du conteneur parent */
+    height: auto; /* Assurez-vous que la hauteur de l'image est automatiquement ajustée en fonction de la largeur */
+    margin-top: 120px ; /* Centre l'image horizontalement */
+   
+}
+.im {
+    display: block; /* Assurez-vous que l'image est affichée comme un bloc pour pouvoir définir la largeur */
+    width: 100%; /* L'image occupera 100% de la largeur de son conteneur parent */
+    height: auto; /* La hauteur est ajustée automatiquement pour maintenir les proportions originales */
+     border: 2px solid none;
+    border-radius: 13px;  
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    margin: 0px 20px 100px 0px;
+    transition: 400ms;
+     }
+.container1 {
+    max-width: 100%; /* Garde l'image à 100% de la largeur du conteneur parent */
+    height: auto; /* Assurez-vous que la hauteur de l'image est automatiquement ajustée en fonction de la largeur */
+    margin-top: 120px ; /* Centre l'image horizontalement */
+    ;
+    
+   
+}
+.im1 {
+    display: block; /* Assurez-vous que l'image est affichée comme un bloc pour pouvoir définir la largeur */
+    width: 100%; /* L'image occupera 100% de la largeur de son conteneur parent */
+    height: auto; /* La hauteur est ajustée automatiquement pour maintenir les proportions originales */
+     border: 2px solid none;
+    border-radius: 13px;  
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    margin: 0px 20px 100px 0px;
+    transition: 400ms;
+     }
+
+
+
+
+
+.im:hover {
+            filter:grayscale(1);
+            transform: scale(1.03)
+        }
+
+.navbar {
+    position:absolute;
+    padding:  50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+nav a {
+    color: aliceblue;
+}
+.navbar.logo {
+    font-size: 2em;
+    font-weight:bold;
+    
+
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+.navbar .nav-links ul li {
+   margin: 5px 80px;
+}
+
+.navbar .nav-links ul li a:hover,
+.navbar .nav-links ul li .active {
+    color:rgb(31, 191, 44);
+}
+
+.navbar .menu-hamb {
+    position:absolute;
+    top:50px;
+    right:50px;
+    width: 35px;
+    background-color: #ffffff58;
+}
+@media screen and (max-width: 900px) {
+    .navbar {
+        padding: 0;
+    }
+    .nav .menu-hamb {
+        display: block
+    }
+    .navbar.logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        ;
+        
+    
+    }
+    .nav-links {
+        top: 0;
+        left: 0;
+        display:flex;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff58;
+        backdrop-filter: blur(8px);
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size:1.2em;
+     }
+}
+.home {
+    
+    background : rgb(98, 96, 96);
+    display: flex;
+    align-items: center;
+    padding: 50px 8% 0;
+}
+.home4 {
+    
+    background : rgb(98, 96, 96);
+    display: flex;
+    align-items: center;
+    padding: 50px 8% 0%;
+    
+}
+.km {
+    
+    background : rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 20px 15% 0%;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    
+}
+.km p {
+    font-size: 20px;
+    color: #000000;
+}
+.km h3 {
+    font-size: 50px;
+    color: #000000;
+    margin: 50px auto 0px 30px ;
+    padding:0% 8% 8%;
+}
+.home1, .home2, .home3 {
+    background: rgb(255, 255, 255);
+    display: flex;
+    margin: 0 auto;
+    padding: 1% 2% 0;
+}
+
+.TeaserLink-icon svg {
+    width: 3em; /* Ajustez selon vos besoins */
+    height: auto;
+    color: rgb(0, 0, 0);
+}
+
+
+.p {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 10em; /* Ajustez selon vos besoins */
+    max-width: 90%;
+}
+
+.u {
+    font-size: 2.5em; /* Ajustez selon vos besoins */
+    font-family: DIN Pro,system-ui,sans-serif;
+}
+
+/* Styles spécifiques aux appareils mobiles avec une largeur d'écran maximale de 600px */
+@media only screen and (max-width: 600px) {
+    .home1, .home2, .home3, .home4 {
+        height: auto; /* Ajustement de la hauteur automatique */
+        flex-direction: row; /* Affichage en lignes */
+        flex-wrap: wrap; /* Permet le retour à la ligne des éléments */
+        justify-content: space-between; /* Espacement égal entre les éléments */
+    }
+
+    .p {
+        padding: 1em; /* Ajustez selon vos besoins */
+        width: 48%; /* Deux éléments par ligne avec un petit espacement */
+        margin-bottom: 1em; /* Espacement entre les lignes */
+        box-sizing: border-box; /* Garantit que la largeur inclut les bordures et le padding */
+    }
+
+    .u {
+        font-size: 1.5em; /* Ajustez selon vos besoins */
+    }
+
+    .TeaserLink-icon svg {
+        width: 100%; /* Ajustez selon vos besoins */
+    }
+    
+}
+
+.content {
+    max-width: 800px; /* Largeur maximale du contenu */
+    margin: 0 auto; /* Centrer le contenu horizontalement */
+    padding: 20px; /* Espacement intérieur */
+}
+.content .mo {
+    font-size: 50px; /* Taille de police de base */
+    line-height: 1.5; /* Espacement entre les lignes */
+    margin-bottom: 20px; /* Espacement en bas du paragraphe */
+    color: rgb(255, 255, 255);
+}
+
+.content .ma {
+    font-size: 20px; /* Taille de police de base */
+    line-height: 1.5; /* Espacement entre les lignes */
+    margin-bottom: 5px; /* Espacement en bas du paragraphe */
+}
+.content {
+    max-width: 800px; /* Largeur maximale du contenu */
+    margin: 0 auto; /* Centrer le contenu horizontalement */
+    padding: 20px; /* Espacement intérieur */
+}
+.content .moo {
+    font-size: 80px; /* Taille de police de base */
+    line-height: 1.5; /* Espacement entre les lignes */
+    margin-bottom: 30px; /* Espacement en bas du paragraphe */
+    color: rgb(255, 255, 255);
+    
+}
+
+.content .maa {
+    font-size: 20px; /* Taille de police de base */
+    line-height: 1.5; /* Espacement entre les lignes */
+    margin-bottom: 5px; /* Espacement en bas du paragraphe */
+    
+}
+.k {
+    font-size: 60px;
+    text-decoration:underline;
+    display: flex;
+    margin: 0 auto;
+    padding: 8% 5% 5%;
+    line-height: 1.5;
+    
+
+}
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+   
+}
+.btn {
+   padding: 10px 28px;
+   background: rgb(243, 191, 96); 
+   border: 2px solid none;
+   border-radius: 15px;
+   font-size: 16px;
+   color: rgb(0, 0, 0);
+   letter-spacing: 1px;
+   font-weight: 600;
+   margin: 10% 0% 0px 0px;
+   
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+    footer {
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    footer h3 {
+        margin-bottom: 40px;
+        font-size: 55px;
+    }
+
+    footer .right {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    footer {
+        padding: 100px 40px;
+    }
+}
+
+footer .right {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .right .links {
+    display: flex;
+    gap: 30px;
+}
+
+footer .right .links a {
+    color: #989898;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+    footer .links a {
+        font-size: 15px;
+    }
+}
+
+footer .right .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .right .social i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.bx {
+    font-family: boxicons!important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+}
+
+footer .right p {
+    font-size: 13px;
+    color: #777;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bxl-instagram:before {
+    content: "\e942";
+}
+
+.material-icons {
+    font-size: 24px; /* Taille de l'icône */
+    color: #ffffff; /* Couleur de l'icône */
+    /* Autres styles CSS */
+}
